@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "aiot": "https://assist-iot.eu/ontologies/aiot#",
+    "aiot_p2": "https://assist-iot.eu/ontologies/aiot_p2#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+    "pilot": "https://assist-iot.eu/pilot2_rdf/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+}
