@@ -1,0 +1,17 @@
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/vc-barcodes#OpticalBarcodeCredential> .
+_:b0 <https://w3id.org/security#proof> _:b1 .
+_:b0 <https://www.w3.org/2018/credentials#credentialStatus> _:b3 .
+_:b0 <https://www.w3.org/2018/credentials#credentialSubject> _:b4 .
+_:b0 <https://www.w3.org/2018/credentials#issuer> <did:key:zDnaeWjKfs1ob9QcgasjYSPEMkwq31hmvSAWPVAgnrt1e9GKj> .
+_:b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/vc-barcodes#TerseBitstringStatusListEntry> .
+_:b3 <https://w3id.org/vc-barcodes#terseStatusListBaseUrl> <https://sandbox.platform.veres.dev/statuses/z19rJ4oGrbFCqf3cNTVDHSbNd/status-lists> .
+_:b3 <https://w3id.org/vc-barcodes#terseStatusListIndex> "3851559041"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/vc-barcodes#AamvaDriversLicenseScannableInformation> .
+_:b4 <https://w3id.org/vc-barcodes#protectedComponentIndex> "uggAg"^^<https://w3id.org/security#multibase> .
+_:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/security#DataIntegrityProof> _:b1 .
+_:b2 <https://w3id.org/security#cryptosuite> "ecdsa-xi-2023"^^<https://w3id.org/security#cryptosuiteString> _:b1 .
+_:b2 <https://w3id.org/security#proofPurpose> <https://w3id.org/security#assertionMethod> _:b1 .
+_:b2 <https://w3id.org/security#proofValue> "z4g6G3dAZhhtPxPWgFvkiRv7krtCaeJxjokvL46fchAFCXEY3FeX2vn46MDgBaw779g1E1jswZJxxreZDCrtHg2qH"^^<https://w3id.org/security#multibase> _:b1 .
+_:b2 <https://w3id.org/security#verificationMethod> <did:key:zDnaeWjKfs1ob9QcgasjYSPEMkwq31hmvSAWPVAgnrt1e9GKj#zDnaeWjKfs1ob9QcgasjYSPEMkwq31hmvSAWPVAgnrt1e9GKj> _:b1 .
+
