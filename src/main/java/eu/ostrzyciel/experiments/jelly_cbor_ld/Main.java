@@ -13,7 +13,6 @@ import com.apicatalog.rdf.RdfDatasetSupplier;
 import com.apicatalog.rdf.nquads.NQuadsReader;
 import eu.ostrzyciel.jelly.convert.titanium.TitaniumJellyEncoder;
 import eu.ostrzyciel.jelly.convert.titanium.TitaniumJellyReader;
-import eu.ostrzyciel.jelly.convert.titanium.TitaniumJellyWriter;
 import eu.ostrzyciel.jelly.core.JellyOptions$;
 import eu.ostrzyciel.jelly.core.proto.v1.RdfStreamFrame;
 import eu.ostrzyciel.jelly.core.proto.v1.RdfStreamFrame$;
@@ -21,7 +20,6 @@ import jakarta.json.Json;
 import jakarta.json.JsonObject;
 import org.apache.commons.io.input.CountingInputStream;
 
-import java.io.ByteArrayOutputStream;
 import java.io.StringReader;
 import java.net.URI;
 import java.util.zip.GZIPInputStream;
@@ -130,11 +128,12 @@ public class Main {
                 }
             }
 
-            System.out.println("\nFrame 0:\n");
-            System.out.println(frame0.toProtoString());
-            System.out.println("\nFrame 1:\n");
+            System.out.println("\n\nFrame 0 as hex:\n");
+            for (byte b : frame0.toByteArray()) {
+                System.out.print(String.format("%02X ", b));
+            }
+            System.out.println("\n\nFrame 1:\n");
             System.out.println(frame1.toProtoString());
-            System.out.println("\nFrame 1 as hex:\n");
             for (byte b : frame1.toByteArray()) {
                 System.out.print(String.format("%02X ", b));
             }
